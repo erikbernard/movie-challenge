@@ -23,6 +23,9 @@
     </li>
 </ul>
 
+## 📋 Deploy
+
+- [Visit app](https://movie-challenge-gilt.vercel.app/#/)
 ## ✨ Technology
 
 This project was developed with the following technologies:
