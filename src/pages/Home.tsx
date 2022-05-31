@@ -7,8 +7,8 @@ import { Movie } from "../model/modelPopular";
 import generateRandomKey from "../utils/generateRandomKey";
 
 export function Home() {
-  const { data, loading, setSearchNameMovie, setLoadingMore } = useMovieFetch();
   sessionStorage.setItem("DetailState", JSON.stringify({}));
+  const { data, loading, setSearchNameMovie, setLoadingMore } = useMovieFetch();
 
   return (
     <>

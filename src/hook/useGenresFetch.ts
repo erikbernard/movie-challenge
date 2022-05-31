@@ -45,9 +45,7 @@ export const useGenresFetch = () => {
   useEffect(() => {
     if (genre <= 0) {
       const sessionState: Movies = isPersistedState("StateGenre");
-
       if (sessionState) {
-        console.log("Grabbing from sessionStorage", sessionState);
         setData(sessionState);
         return;
       }

@@ -5,13 +5,13 @@ import { Spinner } from "../components/Spinner";
 import { useMovieDetailFetch } from "../hook/useMovieDetailFetch";
 
 export function Detail() {
+  sessionStorage.setItem("DetailState", JSON.stringify({}));
   const { state } = useLocation();
   const { data, setMovieId } = useMovieDetailFetch();
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     setMovieId(state as number);
-    console.log(state);
   }, [state]);
 
   setTimeout(() => {
